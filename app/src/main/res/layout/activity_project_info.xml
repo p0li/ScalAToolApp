@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.zalf.pohle.scalatoolapp.ProjectInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/projectInfoContent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Input of project information"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="#000090"
+                android:textColor="#ffffff"
+                android:padding="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name of the organisation"
+                android:id="@+id/pi_1"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Staff endowment"
+                android:id="@+id/pi_2"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Project Title"
+                android:id="@+id/pi_3"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Project Objective"
+                android:id="@+id/pi_4"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Timeframe of Project"
+                android:id="@+id/pi_5"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Size of Target Group"
+                android:id="@+id/pi_6"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Size of Target Area"
+                android:id="@+id/pi_7"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Overall Project Expenditure (projected)"
+                android:id="@+id/pi_8"
+                android:padding="10dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Project Expenditure per farmer/year"
+                android:id="@+id/pi_9"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/projectInfoContent"
+            android:text="Next"
+            android:onClick="storeProjectInfoInputs" />
+    </RelativeLayout>
+</ScrollView>

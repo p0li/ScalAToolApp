@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.zalf.pohle.scalatoolapp.Step7Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- financial resource requirements -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/frr"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="#ff6600"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:text="Financial resource requirements"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand of financial capital (initial and maintenance costs) for the implementation of the project/good practice? (I)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step701"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+        </LinearLayout>
+        <!-- human resource requirements -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/hrr"
+            android:layout_below="@id/frr"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="#ff6600"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:text="Human resource requirements"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand of know-how and skills to allow the adoption of the project/good practice? (II)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step702"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand for additional labour required for adoption of the project/good practice? (III)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step703"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+        </LinearLayout>
+        <!-- institutional resource requirements -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/irr"
+            android:layout_below="@id/hrr"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="#ff6600"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:text="Institutional resource requirements"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the need for particular agricultural and natural resource management laws relating to the management/production/processing at the regional/national level in order to successfully implement the good practice? (IV)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step704"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand for existing social organisations/institutions at the local level? (V)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step705"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+        </LinearLayout>
+        <!-- infrastructural requirements -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ir"
+            android:layout_below="@id/irr"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="#ff6600"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:text="Infrastructural requirements"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand for general infrastructure, for example roads, irrigation structures? (VI)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step706"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand for marketing facilities? (VII)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step707"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand for processing facilities, for example power, access to water? (VIII)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step708"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+        </LinearLayout>
+        <!-- agricultural input requirements -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/air"
+            android:layout_below="@id/ir"
+            android:paddingBottom="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:background="#ff6600"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:text="Agricultural input requirements"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand for organic inputs (e.g. fodder, seeds, manure, crop residues, etc.)? (IV)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step709"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand for technical/physical inputs (e.g. machinery, shelter, construction material, animal draft power, vaccination, synthetic fertilizer, etc.)? (X)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step710"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Of what extent is the demand for additional land to allow for the introduction of the project/good practice? (XI)"
+                android:padding="5dp" />
+            <Spinner
+                android:id="@+id/step711"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score" />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:onClick="storeStep7inputs"
+            android:layout_below="@+id/air"/>
+    </RelativeLayout>
+</ScrollView>

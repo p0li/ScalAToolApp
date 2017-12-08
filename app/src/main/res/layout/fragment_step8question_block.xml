@@ -1,0 +1,132 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.zalf.pohle.scalatoolapp.Step8questionBlockFragment">
+
+    <!-- question block -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="A1: Is the practice affordable by farmers or can the target group carry the cost of the good practice? I"
+            android:padding="5dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="A1: There is sufficient access to financial means by farmers (women and men) by own financial resources (please rate 2); they can access loans at reasonable interest rates (please rate 1); they need major financial assistance by the implementing organisation (please rate 0)."
+            android:padding="5dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+                android:textSize="16dp"
+                android:text="Rating: "/>
+            <Spinner
+                android:id="@+id/step8a011"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+                android:textSize="16dp"
+                android:text="Weighting: "/>
+            <Spinner
+                android:id="@+id/step8a012"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:entries="@array/step7_score_array"
+                android:prompt="@string/step7_score"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+                android:textSize="16dp"
+                android:text="Actual satisfaction: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:gravity="left|bottom"
+                android:textSize="16dp"
+                android:text="result"
+                android:id="@+id/step8a013"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+                android:textSize="16dp"
+                android:text="Maximum score: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:gravity="left|bottom"
+                android:textSize="16dp"
+                android:text="result"
+                android:id="@+id/step8a014"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_gravity="bottom"
+                android:textSize="16dp"
+                android:text="Deviation from maximum score: "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:gravity="left|bottom"
+                android:textSize="16dp"
+                android:text="result"
+                android:id="@+id/step8a015"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_margin="5dp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.zalf.pohle.scalatoolapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/introductionContent"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assessment of Scaling-up Factor Importance"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="#ffcc00"
+                android:textColor="#ffffff"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decision rules"
+                android:id="@+id/decisionRules"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score on a scale from 0 to 3"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Targeted question"
+                android:id="@+id/targetedQuestion"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Of what extent are the resource, institutional and infrastructural requirements of the good practice?"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/introductionPotential"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/introductionContent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Assessment of Scaling-up Potential"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="#dd0806"
+                android:textColor="#ffffff"
+                android:padding="5dp"/>                <!-- rg = rapid guide -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decision rules"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rate on a scale from 0 to 2"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Targeted question"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Has the project approach a higher scaling-up potential than alternative approaches considered for implementation?"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/introductionResults"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/introductionPotential">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Final Results"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:background="#ffcc99"
+                android:textColor="#ffffff"
+                android:padding="5dp"/>                <!-- rg = rapid guide -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Decision rules"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Summarises results of Steps 1-8"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Targeted question"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:padding="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Does the project approach contribute to rural poverty reduction in an
+                sustainable and climatic friendly way and is the potential for rapid and wider
+                scaling-up high?"
+                android:padding="5dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:onClick="loadProjectInfo"
+            android:layout_below="@+id/introductionResults" />
+    </RelativeLayout>
+</ScrollView>
